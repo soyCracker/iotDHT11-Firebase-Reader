@@ -27,7 +27,7 @@ namespace DHT11Reader
             while(true)
             {
                 var client = new HttpClient();
-                Uri firebaseUrl = new Uri("https://dht11firebase-9a52d.firebaseio.com/.json");
+                Uri firebaseUrl = new Uri("https://yours.firebaseio.com/.json");
                 HttpResponseMessage response = await client.GetAsync(firebaseUrl);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
