@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="DHT11Reader.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DHT11Reader"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Name="rootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="theStackPanel.Orientation" Value="Horizontal"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="theStackPanel.Orientation" Value="Vertical"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel Name="theStackPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <RelativePanel>
+                <Ellipse Name="theEllipse" Margin="70,0,0,0" Fill="#a2e767" Stroke="#a2e767" Width="350" Height="350"/>
+                <TextBlock Name="TemperatureText" Text="溫度：*C" FontSize="20" RelativePanel.AlignHorizontalCenterWith="theEllipse" RelativePanel.AlignVerticalCenterWith="theEllipse"/>
+                <TextBlock Name="HumidityText" Text="濕度：%" FontSize="20" RelativePanel.AlignHorizontalCenterWith="theEllipse" RelativePanel.Below="TemperatureText" TextWrapping="Wrap"/>
+            </RelativePanel>
+            
+            <Grid>
+                <TextBlock Name="MeasureTime" Text="測量時間：2017/10/10 12:30:12" FontSize="20" Margin="100,100,100,100" VerticalAlignment="Center"/>
+            </Grid>
+            
+        </StackPanel>
+    </Grid>
+</Page>
