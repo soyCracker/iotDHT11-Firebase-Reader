@@ -3,7 +3,7 @@
 raspbarry pi3透過dht11讀取溫濕度，並上傳至Firebase，再利用app抓取並顯示。
 
 #### iotDHT11：
-平台為raspberry pi3，安裝dht11溫溼度感測器，使用python抓取資料。  
+平台為raspberry pi3，安裝dht11溫溼度感測器，使用python抓取資料。  
 需事先安裝程式庫 adafruit dht11：
 ````
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git  '
