@@ -26207,11 +26207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UserData\\Documents\\Visual Studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\DHT11Reader.csproj",
+      "projectUniqueName": "d:\\userdata\\documents\\visual studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\DHT11Reader.csproj",
       "projectName": "DHT11Reader",
-      "projectPath": "D:\\UserData\\Documents\\Visual Studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\DHT11Reader.csproj",
+      "projectPath": "d:\\userdata\\documents\\visual studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\DHT11Reader.csproj",
       "packagesPath": "C:\\Users\\Peacock\\.nuget\\packages\\",
-      "outputPath": "D:\\UserData\\Documents\\Visual Studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\obj\\",
+      "outputPath": "d:\\userdata\\documents\\visual studio 2017\\Projects\\DHT11Reader\\DHT11Reader\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

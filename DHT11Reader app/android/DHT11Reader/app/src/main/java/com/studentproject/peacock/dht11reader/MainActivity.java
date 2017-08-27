@@ -1,11 +1,11 @@
 package com.studentproject.peacock.dht11reader;
 
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,8 +17,8 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
 
     public String temperature,humidity,time;
-    private TextView ResultText;
-    private Button readButton;
+    public TextView ResultText,MeasureTimeText;
+
 
     //建一個HandlerThread，在後台讀取Firebase的資料
     private HandlerThread refreshHT=new HandlerThread("HandlerThread");
@@ -41,14 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void initView() {
         ResultText=(TextView)findViewById(R.id.ResultText);
-        readButton=(Button)findViewById(R.id.readButton);
-
-        readButton.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                getFirebaseData();
-            }
-        });
+        MeasureTimeText=(TextView)findViewById(R.id.MeasureTimeText);
     }
 
     //從Firebase讀取資料
@@ -66,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
                 runOnUiThread(new Runnable() {
                     public void run(){
-                        //這裡為想讓他執行的工作
-                        ResultText.setText("溫度: "+temperature+" \n"+"濕度: "+humidity+" \n"+"測量時間: "+time);
+                        // UI更新
+                        showData(temperature,humidity,time);
+                        colorSwitch(temperature);
                     }
                 });
             }
@@ -92,11 +86,41 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    public void showData(String temperature,String humidity,String time)
+    {
+        ResultText.setText("溫度: "+temperature+" \n"+"濕度: "+humidity);
+        MeasureTimeText.setText("測量時間: "+time);
+    }
+
+    public  void colorSwitch(String temString)
+    {
+        //將溫度字串刪去*C
+        temString=temString.replace("*C","");
+        //轉換為float
+        float temperature=Float.parseFloat(temString);
+        //改變Shape的顏色(solid color)
+        GradientDrawable theDrawable = (GradientDrawable)ResultText.getBackground();
+        if(temperature>=28)
+        {
+            //若溫度>=28，代表嚴熱，將圓塗成紅色
+            theDrawable.setColor(Color.argb(255, 231, 76, 60));
+        }
+        else if(temperature>=17)
+        {
+            //若溫度>=17、<28，代表正常，將圓塗成綠色
+            theDrawable.setColor(Color.argb(255, 162, 231, 103));
+        }
+        else
+        {
+            //若溫度<17，代表寒冷，將圓塗成藍色
+            theDrawable.setColor(Color.argb(255, 54, 221, 231));
+        }
+    }
+
     @Override
     protected void onDestroy(){
         super.onDestroy();
         //結束程式釋放HandlerThread
         refreshHT.quit();
     }
-
 }

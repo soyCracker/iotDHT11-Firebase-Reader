@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.UI;
 using Windows.UI.Xaml.Controls;
@@ -27,7 +26,7 @@ namespace DHT11Reader
             while(true)
             {
                 var client = new HttpClient();
-                Uri firebaseUrl = new Uri("https://yours.firebaseio.com/.json");
+                Uri firebaseUrl = new Uri("https://dht11firebase-9a52d.firebaseio.com/.json");
                 HttpResponseMessage response = await client.GetAsync(firebaseUrl);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
@@ -43,24 +42,26 @@ namespace DHT11Reader
         public void showData(DHT11Data dht11Data)
         {
             //顯示 dht11 data
-            HumidityText.Text = "濕度：" + dht11Data.temperaturehumidity.humidity;
-            TemperatureText.Text = "溫度：" + dht11Data.temperaturehumidity.temperature;
+            ResultText.Text = "溫度：" + dht11Data.temperaturehumidity.temperature + "\n" + "濕度：" + dht11Data.temperaturehumidity.humidity;
             MeasureTime.Text = "測量時間：" + dht11Data.temperaturehumidity.time;
         }
 
         public void colorSwitch(DHT11Data dht11Data)
         {
-            //正規表達式，找出 *C
-            Regex regex = new Regex("[\\*C]");
+            //正規表達式，刪去*C，並轉換為float
+            //Regex regex = new Regex("[\\*C]");
+            //float temperature = Convert.ToSingle(regex.Replace(dht11Data.temperaturehumidity.temperature, ""));
+
             //將溫度字串刪去*C，並轉換為float
-            float temFloat = Convert.ToSingle(regex.Replace(dht11Data.temperaturehumidity.temperature, ""));
+            String temString = dht11Data.temperaturehumidity.temperature.Replace("*C", "");
+            float temperature = Convert.ToSingle(temString);
             SolidColorBrush scBrush = new SolidColorBrush();
-            if (temFloat>=28)
+            if (temperature>=28)
             {
                 //若溫度>=28，代表嚴熱，theEllipse塗成紅色
                 scBrush.Color = Color.FromArgb(255, 231, 76, 60);
             }
-            else if(temFloat>=17)
+            else if(temperature>=17)
             {
                 //若溫度>=17、<28，代表正常，theEllipse塗成綠色
                 scBrush.Color = Color.FromArgb(255, 162, 231, 103);                

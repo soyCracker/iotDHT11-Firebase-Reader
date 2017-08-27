@@ -42,8 +42,6 @@
       <RootMethod Name="SetAlignHorizontalCenterWith" />
       <RootMethod Name="GetAlignVerticalCenterWith" />
       <RootMethod Name="SetAlignVerticalCenterWith" />
-      <RootMethod Name="GetBelow" />
-      <RootMethod Name="SetBelow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Name" />
@@ -51,7 +49,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Name" />

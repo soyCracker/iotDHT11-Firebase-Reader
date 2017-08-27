@@ -10,22 +10,22 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e88dfa77-a96c-4bac-9508-3671af7a2dcf</PackageIdentityName>
     <PackageIdentityPublisher>CN=Peacock</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\DHT11Reader.exe">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\DHT11Reader.exe">
       <PackagePath>entrypoint\DHT11Reader.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peacock\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -388,47 +388,47 @@
     <AppxPackagedFile Include="C:\Users\Peacock\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\DHT11Reader.xr.xml">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\DHT11Reader.xr.xml">
       <PackagePath>DHT11Reader.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\UserData\Documents\Visual Studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\Core\DHT11Reader.exe">
+    <AppxPackagedFile Include="d:\userdata\documents\visual studio 2017\Projects\DHT11Reader\DHT11Reader\bin\x64\Debug\Core\DHT11Reader.exe">
       <PackagePath>DHT11Reader.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

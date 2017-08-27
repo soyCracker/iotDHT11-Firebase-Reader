@@ -34,12 +34,11 @@
             
             <RelativePanel>
                 <Ellipse Name="theEllipse" Margin="70,0,0,0" Fill="#a2e767" Stroke="#a2e767" Width="350" Height="350"/>
-                <TextBlock Name="TemperatureText" Text="溫度：*C" FontSize="20" RelativePanel.AlignHorizontalCenterWith="theEllipse" RelativePanel.AlignVerticalCenterWith="theEllipse"/>
-                <TextBlock Name="HumidityText" Text="濕度：%" FontSize="20" RelativePanel.AlignHorizontalCenterWith="theEllipse" RelativePanel.Below="TemperatureText" TextWrapping="Wrap"/>
+                <TextBlock Name="ResultText" Text="Reading Data......" FontSize="20" RelativePanel.AlignHorizontalCenterWith="theEllipse" RelativePanel.AlignVerticalCenterWith="theEllipse"/>
             </RelativePanel>
             
             <Grid>
-                <TextBlock Name="MeasureTime" Text="測量時間：2017/10/10 12:30:12" FontSize="20" Margin="100,100,100,100" VerticalAlignment="Center"/>
+                <TextBlock Name="MeasureTime" Text="MeasureTime" FontSize="20" Margin="100,100,100,100" VerticalAlignment="Center"/>
             </Grid>
             
         </StackPanel>

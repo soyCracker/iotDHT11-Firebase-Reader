@@ -22,15 +22,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="100dp" />
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:background="@drawable/oval" />
 
-        <Button
-            android:id="@+id/readButton"
+        <TextView
+            android:id="@+id/MeasureTimeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Data"
-            android:layout_marginTop="100dp" />
-
+            android:text="MeasureTime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="100dp"
+            android:gravity="center" />
     </LinearLayout>
 
 
